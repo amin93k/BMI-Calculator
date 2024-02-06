@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;600&display=swap');
+*{
+    font-family: 'Jost', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Roboto Mono', monospace;
+    box-sizing: border-box;
+    background: linear-gradient(#74f63c, #3fa695);
+    display: grid;
+    height: 100vh;
+    place-items: center;
+}
+.container{
+    width: 90%;
+    max-width: 480px;
+    padding: 15px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 10px 15px rgba(0, 0 ,0 ,0.25);
+    display: grid;
+    gap: 1rem;
+}
+h1{
+    text-align: center;
+}
+.calculator{
+    display: grid;
+    gap: 1rem;
+}
+.calculator div{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.calculator label{
+    font-weight: 600;
+    flex: 0 1 120px;
+}
+.calculator input{
+    flex: 1;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline-color: #68c4b4;
+    text-align: center;
+    font-size: 20px;
+}
+.calculator button{
+    width: 50%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    background-color: #46b2a0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.calculator button[type="reset"]{
+    background-color: #444;
+}
+.calculator button:hover{
+    filter: brightness(120%);
+}
+.out-put{
+    text-align: center;
+}
+.out-put #bmi{
+    font-size: 38px;
+}
+.out-put #desc{
+    text-transform: capitalize;
+}
+.bmi-scale{
+    display: flex;
+}
+.bmi-scale div{
+    flex: 1;
+    text-align: center;
+    border-top: 5px solid;
+}
+.bmi-scale h4{
+    font-size: 16px;
+    color:darkgrey;
+}
+.bmi-scale div:nth-child(1){
+    color: orange;
+}
+.bmi-scale div:nth-child(2){
+    color: green;
+}
+.bmi-scale div:nth-child(3){
+    color: lightcoral;
+}
+.bmi-scale div:nth-child(4){
+    color: crimson;
+}
+.underweight{
+    color : orange;
+}
+.healthy{
+    color : green;
+}
+.overweight{
+    color : lightcoral;
+}
+.obese{
+    color : crimson;
+}
